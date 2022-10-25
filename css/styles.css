@@ -161,26 +161,25 @@ img {
 .contacts-list{
     display: flex;
     margin-left: auto;
-    align-items: center;
 }
 
 .contacts-item{
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.14 ;
+    line-height: 1.14;
     letter-spacing: 0.02em;
-    align-items: center;
-    display: flex;
-    fill: var(--paragraph-gray-color);
-    
+    display: flex; 
+    align-content: center;
+
 }
 
 .contacts-link{
+    display: flex;
+    align-self: center;
     color: var(--paragraph-gray-color);
-}
+    fill: var(--paragraph-gray-color);
+} 
 
-.contacts-item:hover,
-.contacts-item:focus,
 .contacts-link:hover,
 .contacts-link:focus
  {
@@ -189,14 +188,12 @@ img {
 }
 
 .header-icon-envelope{
-    align-items: center;
-    display: flex;
+    display: inline-block;
     margin-right: 10px;
 }
 
-.header-icon-smartphone {
-    align-items: center;
-    display: flex;
+.header-icon-smartphone{
+    display:inline-block;
     margin-right: 10px;
 }
 
@@ -303,6 +300,7 @@ img {
 
 .dignity-item {
     width: 270px;
+    
 }
 
 .dignity-item::before {
@@ -314,6 +312,7 @@ img {
     background-size: contain 70px 70px;
     background-repeat: no-repeat;
     background-position: center;
+    border-radius: 4px;
 }
 
 .icon-antenna::before {
@@ -482,7 +481,11 @@ background: var(--accent-color);
     margin-right: auto;
     display: flex;
     justify-content: space-between;
-    
+}
+
+.client-item{
+    width: 170px;
+    height: 92px;
 }
 
 .client-link {
@@ -490,11 +493,15 @@ background: var(--accent-color);
     border: 1px solid;
     border-color: var(--icon-passive-color);
     border-radius: 4px;
-    display: inline-block;
-    padding-top: 16px;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    /* padding-top: 16px;
     padding-bottom: 16px;
-    padding-right: 32px;;
-    padding-left: 32px;
+    padding-right: 32px;
+    padding-left: 32px; */
 }
 
 .client-link:hover,
@@ -509,8 +516,7 @@ background: var(--accent-color);
 
 .client-icon {
     
-    align-items: center;
-    justify-content: center;
+    
     display: flex;
 }
 
